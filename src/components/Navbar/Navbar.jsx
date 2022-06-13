@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div data-cy="navbar" style={{display:"flex", justifyContent:"space-between", margin:"10px" }} >
       <div>
-          <Link to="/" >logo</Link>
+          <Link to="/" >Home</Link>
         <a data-cy="navbar-home-link"></a>
       </div>
       <div  style={{display:"flex", justifyContent:"space-between" }}>
