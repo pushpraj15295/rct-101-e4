@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div data-cy="navbar">
+    <div data-cy="navbar" style={{display:"flex", justifyContent:"space-between", margin:"10px" }} >
       <div>
-        {/* TODO: Use Link instead of anchor tag. */}
+          <Link to="/" >logo</Link>
         <a data-cy="navbar-home-link"></a>
       </div>
-      <div>
-        <div data-cy="navbar-cart-items-count"></div>
-        <button data-cy="navbar-login-logout-button"></button>
+      <div  style={{display:"flex", justifyContent:"space-between" }}>
+        <div data-cy="navbar-cart-items-count">Cart : {0}</div>  &nbsp;
+        <button data-cy="navbar-login-logout-button">logout</button>
       </div>
     </div>
   );
